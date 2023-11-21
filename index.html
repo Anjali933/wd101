@@ -7,8 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding-top: 88px;
-      margin: 0;
+      padding-top: 0;
     }
     .container {
       max-width: 400px;
@@ -16,7 +15,7 @@
     }
     label {
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 1px;
     }
     input#email:invalid:focus{
         border: 1px solid red;
@@ -28,8 +27,8 @@
       box-sizing: border-box;
     }
     button {
-      background-color: #4caf50;
-      color: white;
+      background-color: #af4c81;
+      color: rgb(13, 13, 13);
       padding: 10px 15px;
       border: none;
       border-radius: 4px;
@@ -47,16 +46,11 @@
     margin-bottom: 20px;
   }
   th, td {
-    padding: 8px;
+    padding: 10px;
     text-align: left;
     border: 1px solid #000000;
   }
-  
-  
-    .error {
-      color: red;
-      margin-top: 5px;
-    }
+
 
   </style>
 </head>
@@ -64,32 +58,33 @@
 <body>
 <div class="container">
   <h2>Registration Form</h2>
-  <form id="user-form" onsubmit="return validateAge()" >
-    <label for="name">Name:</label>
+  <form id="user" onsubmit="return validateAge()" >
+    <label for="name">NAME:</label>
     <input type="text" id="name" name="name" required>
   
 
-    <label for="email">Email:</label>
+    <label for="email">EMAIL:</label>
     <input type="email" id="email" name="email" required>
     
 
-    <label for="password">Password:</label>
+    <label for="password">PASSWORD:</label>
     <input type="password" id="password" name="password" required>
    
      
-    <label for="dob">Date of Birth</label>
+    <label for="dob">DATE OF BIRTH</label>
     <input type="date" id="dob" name="dob">
     
-    <label for="acceptTerms">Accept Terms & Conditions</label>
+    
     <input type="checkbox" id="acceptTerms" name="acceptTerms">
+    <label for="acceptTerms">ACCEPT TERMS & CONDITIONS</label>
    
 
-    <button type="submit">Submit</button>
+    <button type="submit">SUMBIT</button>
   </form>
   <div 
     class="relative bg-white px-6 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-908/5 sm:mx-auto s: rounded-1g sn:px-10">
     <div class="mx-auto">
-      <h2 class="text-3x1 text-center font-bold leading-tight">Entries</h2>
+      <h2 class="text-3x1 text-center font-bold leading-tight">ENTRIES</h2>
       <div class="divide-y divide-gray-300/50" id="user-entries"></div>
 </div>
 
